@@ -1,0 +1,26 @@
+.roles-container {
+    padding: 24px;
+    background: #fff;
+    min-height: 360px;
+  }
+  
+  .roles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .horizontal-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .roles-header h2 {
+    margin: 0;
+  }
+  
+  .ant-table {
+    background: #fff;
+  }
+  
