@@ -19,9 +19,13 @@ function Dashboard()
                 </ul>
             </aside>
             <main className='main-content'>
+                <div>
                 <header className='header'>
-                    <h1>Dashboard</h1>
-                    {/* <section className='content'>
+                    <h1>Dashboard</h1>                    
+                </header>
+                </div>
+                    <br></br>
+                    <section className='content'>
                         <div className='card'>
                             <h2>Total Staff</h2>
                             <p>9.69K</p>
@@ -32,8 +36,7 @@ function Dashboard()
                             <p>346.2</p>
                             <span>+2.45% since last week</span>
                         </div>
-                    </section> */}
-                </header>
+                    </section>
             </main>
         </div>
     );
