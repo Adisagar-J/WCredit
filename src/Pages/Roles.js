@@ -1,8 +1,9 @@
 import React from 'react';
-import { Table, Button } from 'antd';
+import { Table, Button, Switch } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 import './Roles.css';
 import SearchBar from './SearchBar';
+import { Router, Routes } from 'react-router-dom';
 
 const columns = [
   {
@@ -39,7 +40,7 @@ function Roles() {
     <div className="roles-container">
       <div className="roles-header">
       <h2>View Roles</h2>
-        <div style={{ display: 'flex' }}>
+      <div style={{ display: 'flex' }}>
           <Button type="primary" icon={<PlusOutlined />} style={{ marginLeft: 'auto', marginRight: 16 }}>
             Create New Role
           </Button>
