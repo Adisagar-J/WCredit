@@ -7,20 +7,12 @@ import { Link } from 'react-router-dom';
 
 const columns = [
   {
-    title: 'Name',
-    dataIndex: 'name',
+    title: 'Vehicle Name',
+    dataIndex: 'vehicleName',
   },
   {
-    title: 'Email',
-    dataIndex: 'email',
-  },
-  {
-    title: 'Roles',
-    dataIndex: 'roles',
-  },
-  {
-    title: 'Mobile No',
-    dataIndex: 'mobileNo',
+    title: 'Vehicle Number',
+    dataIndex: 'vehicleNumber',
   },
   {
     title: 'Action',
@@ -35,26 +27,26 @@ const columns = [
 ];
 
 const data = [
-  { key: '1', name: 'Commissioner' },
-  { key: '2', name: 'Customer' },
-  { key: '3', name: 'Sanitary Inspector' },
-  { key: '4', name: 'Staff' },
-  { key: '5', name: 'Supervisor' },
+  { key: '1', vehicleName: 'Commissioner' },
+  { key: '2', vehicleName: 'Customer' },
+  { key: '3', vehicleName: 'Sanitary Inspector' },
+  { key: '4', vehicleName: 'Staff' },
+  { key: '5', vehicleName: 'Supervisor' },
 ];
 
 const onChange = (pagination, filters, sorter, extra) => {
   console.log('params', pagination, filters, sorter, extra);
 };
 
-function Users() {
+function VehicleMaster() {
   return (
     <div className="roles-container">
       <div className="roles-header">
         <h2>View Roles</h2>
         <div style={{ display: 'flex' }}>
-          <Link to="/dashboard/newUser">
+          <Link to="/dashboard/vehicle-master">
             <Button type="primary" icon={<PlusOutlined />} style={{ marginLeft: 'auto', marginRight: 16 }}>
-              Create New User
+              New Vehicle
             </Button>
           </Link>
         </div>
@@ -65,4 +57,4 @@ function Users() {
   );
 }
 
-export default Users;
+export default VehicleMaster;
