@@ -53,10 +53,10 @@ const AppLayout = () => {
             <Link to="/dashboard/master-ward">Master Ward</Link>
           </Menu.Item>
           <Menu.Item key="/dashboard/assign-staff-vehicle" icon={<ToolOutlined />}>
-            <Link to="/dashboard/assign-staff-vehicle">Assign Staff & Vehicle</Link>
+            <Link to="/dashboard/staff-Vehicle">Assign Staff & Vehicle</Link>
           </Menu.Item>
           <Menu.Item key="/dashboard/master-points" icon={<AimOutlined />}>
-            <Link to="/dashboard/master-points">Master Points</Link>
+            <Link to="/dashboard/viewpoins">Master Points</Link>
           </Menu.Item>
           <Menu.Item key="/dashboard/location-tracking" icon={<AimOutlined />}>
             <Link to="/dashboard/location-tracking">Location Tracking</Link>

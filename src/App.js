@@ -8,6 +8,13 @@ import Users from '../src/Pages/Users';
 import NewUser from '../src/Pages/NewUser';
 import VehicleMaster from '../src/Pages/VehicleMaster';
 import NewVehicle from '../src/Pages/NewVehicle';
+import WardMaster from '../src/Pages/WardMaster';
+import NewWard from '../src/Pages/Newward';
+import StaffandVehicle from '../src/Pages/StaffandVehicle';
+import NewStaffAssign from '../src/Pages/NewStaffAssign';
+import AppLayout from './Layout';
+import ViewPoints from './Pages/ViewPointsDetails';
+import NewPoints from './Pages/NewPoints';
 
 function App() {
   return (
@@ -21,6 +28,12 @@ function App() {
           <Route path="newUser" element={<NewUser />} />
           <Route path="vehicle-master" element={<VehicleMaster />} />
           <Route path="newVehicle" element={<NewVehicle />} />
+          <Route path="master-ward" element={<WardMaster />} />
+          <Route path="newward" element={<NewWard />} />
+          <Route path="staff-Vehicle" element={<StaffandVehicle />} />
+          <Route path="newStaffAssign" element={<NewStaffAssign />} />
+          <Route path="viewpoins" element={<ViewPoints />} />
+          <Route path="newpoints" element={<NewPoints />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
