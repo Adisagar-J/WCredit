@@ -1,48 +1,55 @@
 import React, { useState } from 'react';
+import './NewVehicle.css';  // Import the CSS file
 
-const NewVehicleForm = () => {
+const NewVehicle = () => {
   const [vehicleName, setVehicleName] = useState('');
   const [vehicleNumber, setVehicleNumber] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
     // Handle form submission logic
     console.log('Vehicle Name:', vehicleName);
     console.log('Vehicle Number:', vehicleNumber);
   };
 
+  const handleCancel = () => {
+    // Handle cancel logic
+    setVehicleName('');
+    setVehicleNumber('');
+  };
+
   return (
-    <div className="new-vehicle-form">
-      <h2>New Vehicle</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="vehicleName">Vehicle Name*</label>
-          <input
-            type="text"
-            id="vehicleName"
-            value={vehicleName}
-            onChange={(e) => setVehicleName(e.target.value)}
-            required
-          />
+    <div className="content">
+      <h2 className="form-header">NEW VEHICLE</h2>
+      <form onSubmit={handleSubmit} className="vehicle-form">
+        <div className="form-group-horizontal">
+          <div className="form-group">
+            <label>Vehicle Name*</label>
+            <input
+              type="text"
+              value={vehicleName}
+              onChange={(e) => setVehicleName(e.target.value)}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label>Vehicle Number*</label>
+            <input
+              type="text"
+              placeholder="Ex(TN XX AZ XXXX)"
+              value={vehicleNumber}
+              onChange={(e) => setVehicleNumber(e.target.value)}
+              required
+            />
+          </div>
         </div>
-        <div className="form-group">
-          <label htmlFor="vehicleNumber">Vehicle Number*</label>
-          <input
-            type="text"
-            id="vehicleNumber"
-            placeholder="Ex(TN XX AZ XXXX)"
-            value={vehicleNumber}
-            onChange={(e) => setVehicleNumber(e.target.value)}
-            required
-          />
-        </div>
-        <div className="form-actions">
-          <button type="submit" className="submit-button">Submit</button>
-          <button type="button" className="cancel-button" onClick={() => { setVehicleName(''); setVehicleNumber(''); }}>Cancel</button>
+        <div className="form-buttons">
+          <button type="submit" className="btn submit-btn">Submit</button>
+          <button type="button" onClick={handleCancel} className="btn cancel-btn">Cancel</button>
         </div>
       </form>
     </div>
   );
 };
 
-export default NewVehicleForm;
+export default NewVehicle;

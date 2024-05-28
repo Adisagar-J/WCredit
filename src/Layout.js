@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Button } from 'antd';
 import {
+  MenuUnfoldOutlined,
+  MenuFoldOutlined,
   DashboardOutlined,
   TeamOutlined,
   UserOutlined,
@@ -16,12 +18,17 @@ import './Layout.css';
 const { Header, Sider, Content } = Layout;
 
 const AppLayout = () => {
+  const [collapsed, setCollapsed] = useState(false);
   const location = useLocation();
   const selectedKey = location.pathname;
 
+  const toggleCollapsed = () => {
+    setCollapsed(!collapsed);
+  };
+
   return (
     <Layout style={{ height: '100vh' }}>
-      <Sider width={200} className="site-layout-background">
+      <Sider collapsible collapsed={collapsed} onCollapse={setCollapsed} width={200} className="site-layout-background">
         <Menu
           mode="inline"
           selectedKeys={[selectedKey]}
@@ -56,8 +63,8 @@ const AppLayout = () => {
           </Menu.Item>
         </Menu>
       </Sider>
-      <Layout style={{ padding: '0 24px 24px' }}>
-        <Header className="site-layout-background" style={{ padding: 0 }} />
+      <Layout>
+        <Header className="site-layout-background" style={{ padding: 0 }}/>
         <Content
           style={{
             padding: 24,

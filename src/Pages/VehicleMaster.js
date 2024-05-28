@@ -44,7 +44,7 @@ function VehicleMaster() {
       <div className="roles-header">
         <h2>View Roles</h2>
         <div style={{ display: 'flex' }}>
-          <Link to="/dashboard/vehicle-master">
+          <Link to="/dashboard/newVehicle">
             <Button type="primary" icon={<PlusOutlined />} style={{ marginLeft: 'auto', marginRight: 16 }}>
               New Vehicle
             </Button>
