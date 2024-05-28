@@ -1,0 +1,73 @@
+/* NewStaffAssign.css */
+
+.new-ward-form {
+    width: 50%; /* Form occupies half of the web screen */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Example padding */
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  .header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center; /* Center header text */
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust as needed */
+  }
+  
+  .form-row {
+    display: flex;
+    align-items: center; /* Center elements vertically */
+    gap: 10px; /* Adjust as needed */
+  }
+  
+  .form-row label {
+    width: 100px; /* Adjust as needed */
+    text-align: right; /* Align labels to the right */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .form-row.buttons {
+    justify-content: center; /* Center buttons horizontally */
+  }
+  
+  .submit-button {
+    padding: 8px 16px; /* Adjust for medium size */
+    border: none;
+    background-color: #007bff; /* Example button color */
+    color: #fff; /* Example button text color */
+    cursor: pointer;
+  }
+  
+  .cancel-button {
+    padding: 8px 16px; /* Adjust for medium size */
+    border: none;
+    background-color: red; /* Example button color */
+    color: #fff; /* Example button text color */
+    cursor: pointer;
+  }
+  
+  label.required::after {
+    content: '*';
+    color: red; /* Make the asterisk red */
+    margin-left: 2px; /* Adjust spacing between label text and asterisk */
+  }
+  
+  .required::after {
+    content: ''; /* Remove the asterisk for non-required fields */
+  }
+  
+  .submit-button:hover,
+  .cancel-button:hover {
+    background-color: #0056b3; /* Example hover color */
+  }
+  
