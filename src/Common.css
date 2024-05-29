@@ -10,7 +10,10 @@
   color: white;
   padding: 20px;
 }
-
+.custom-search-bar {
+  /* Add any additional styles you want to apply to the search bar */
+  width: 200px; /* Example width adjustment */
+}
 .sidebar ul {
   list-style: none;
   padding: 0;
