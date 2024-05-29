@@ -16,6 +16,8 @@ import AppLayout from './Layout';
 import ViewPoints from './Pages/ViewPointsDetails';
 import NewPoints from './Pages/NewPoints';
 
+
+
 function App() {
   return (
     <Router>
@@ -34,6 +36,10 @@ function App() {
           <Route path="newStaffAssign" element={<NewStaffAssign />} />
           <Route path="viewpoins" element={<ViewPoints />} />
           <Route path="newpoints" element={<NewPoints />} />
+          <Route path="gpstracker" element={<GpsTracker />} />
+
+
+
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

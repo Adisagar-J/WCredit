@@ -23,8 +23,8 @@ const columns = [
     dataIndex: 'action',
     render: (text, record) => (
       <div className="horizontal-buttons">
-        <Button type="default" style={{ marginRight: 8 }}>Edit</Button>
-        <Button type="danger">Delete</Button>
+        <Button type="default" style={{ marginRight: 8 ,color:'white',backgroundColor:'#0056b3'}}>Edit</Button>
+        <Button type="default" style={{marginRight: 8,color:'white',backgroundColor:'red'}}>Delete</Button>
       </div>
     ),
   },
@@ -55,7 +55,7 @@ function StaffandVehicle() {
           </Link>
         </div>
       </div>
-      <SearchBar />
+      <SearchBar /><br></br><br></br>
       <Table columns={columns} dataSource={data} onChange={onChange} />
     </div>
   );
