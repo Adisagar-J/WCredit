@@ -32,33 +32,33 @@ const AppLayout = () => {
         <Menu
           mode="inline"
           selectedKeys={[selectedKey]}
-          style={{ height: '100%', borderRight: 0 }}
+          style={{ height: '100%', borderRight: 0,backgroundColor:'GrayText' }}
         >
-          <Menu.Item key="/dashboard" icon={<DashboardOutlined />}>
+          <Menu.Item key="/dashboard" style={{color:'#fff'}} icon={<DashboardOutlined />}>
             <Link to="/dashboard">Dashboard</Link>
           </Menu.Item>
-          <Menu.Item key="/dashboard/roles" icon={<TeamOutlined />}>
+          <Menu.Item key="/dashboard/roles" style={{color:'#fff'}}icon={<TeamOutlined />}>
             <Link to="/dashboard/roles">Roles</Link>
           </Menu.Item>
-          <Menu.Item key="/dashboard/users" icon={<UserOutlined />}>
+          <Menu.Item key="/dashboard/users" style={{color:'#fff'}} icon={<UserOutlined />}>
             <Link to="/dashboard/users">Users</Link>
           </Menu.Item>
-          <Menu.Item key="/dashboard/add-wardmember" icon={<UserAddOutlined />}>
+          <Menu.Item key="/dashboard/add-wardmember" style={{color:'#fff'}} icon={<UserAddOutlined />}>
             <Link to="/dashboard/add-wardmember">Add Wardmember</Link>
           </Menu.Item>
-          <Menu.Item key="/dashboard/vehicle-master" icon={<CarOutlined />}>
+          <Menu.Item key="/dashboard/vehicle-master" style={{color:'#fff'}} icon={<CarOutlined />}>
             <Link to="/dashboard/vehicle-master">Vehicle Master</Link>
           </Menu.Item>
-          <Menu.Item key="/dashboard/master-ward" icon={<HomeOutlined />}>
+          <Menu.Item key="/dashboard/master-ward" style={{color:'#fff'}} icon={<HomeOutlined />}>
             <Link to="/dashboard/master-ward">Master Ward</Link>
           </Menu.Item>
-          <Menu.Item key="/dashboard/assign-staff-vehicle" icon={<ToolOutlined />}>
+          <Menu.Item key="/dashboard/assign-staff-vehicle" style={{color:'#fff'}} icon={<ToolOutlined />}>
             <Link to="/dashboard/staff-Vehicle">Assign Staff & Vehicle</Link>
           </Menu.Item>
-          <Menu.Item key="/dashboard/master-points" icon={<AimOutlined />}>
+          <Menu.Item key="/dashboard/master-points"style={{color:'#fff'}}  icon={<AimOutlined />}>
             <Link to="/dashboard/viewpoins">Master Points</Link>
           </Menu.Item>
-          <Menu.Item key="/dashboard/location-tracking" icon={<AimOutlined />}>
+          <Menu.Item key="/dashboard/location-tracking" style={{color:'#fff'}} icon={<AimOutlined />}>
             <Link to="/dashboard/location-tracking">Location Tracking</Link>
           </Menu.Item>
         </Menu>
