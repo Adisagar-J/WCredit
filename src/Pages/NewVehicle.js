@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './NewVehicle.css';  // Import the CSS file
+import '../Styles/NewVehicle.css';
 
 const NewVehicle = () => {
   const [vehicleName, setVehicleName] = useState('');

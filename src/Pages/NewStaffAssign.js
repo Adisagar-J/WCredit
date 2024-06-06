@@ -1,7 +1,7 @@
 // NewStaffAssign.js
 import React from 'react';
 import { Input } from 'antd';
-import './NewStaffAssign.css'; // You'll need to create this CSS file for styling
+import '../Styles/NewStaffAssign.css';
 
 const NewStaffAssign = () => {
   return (

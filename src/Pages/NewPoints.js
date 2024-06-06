@@ -1,7 +1,7 @@
 // NewWardForm.js
 import { Table, label,Input } from 'antd';
 import React from 'react';
-import './NewWardForm.css'; // You'll need to create this CSS file for styling
+import '../Styles/NewWardForm.css';
 
 const NewPoints = () => {
   return (

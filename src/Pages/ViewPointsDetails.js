@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table, Button } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
-import './Roles.css';
+import '../Styles/Roles.css';
 import SearchBar from './SearchBar';
 import { Link } from 'react-router-dom';
 
