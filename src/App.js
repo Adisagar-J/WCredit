@@ -1,6 +1,7 @@
+// src/App.js
 import React from 'react';
-import AppLayout from './Layout';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import AppLayout from './Layout';
 import SignIn from './SignIn';
 import Dashboard from '../src/Pages/Dashboard';
 import Roles from '../src/Pages/Roles';
@@ -12,11 +13,9 @@ import WardMaster from '../src/Pages/WardMaster';
 import NewWard from '../src/Pages/Newward';
 import StaffandVehicle from '../src/Pages/StaffandVehicle';
 import NewStaffAssign from '../src/Pages/NewStaffAssign';
-import AppLayout from './Layout';
 import ViewPoints from './Pages/ViewPointsDetails';
 import NewPoints from './Pages/NewPoints';
-
-
+import LocationTracking from './Pages/LocationTracking';
 
 function App() {
   return (
@@ -36,10 +35,7 @@ function App() {
           <Route path="newStaffAssign" element={<NewStaffAssign />} />
           <Route path="viewpoins" element={<ViewPoints />} />
           <Route path="newpoints" element={<NewPoints />} />
-          <Route path="gpstracker" element={<GpsTracker />} />
-
-
-
+          <Route path="location-tracking" element={<LocationTracking />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
